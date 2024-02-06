@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <title>Phoenix</title>
+</head>
+
+<body>
+  <div class="main-header position-fixed w-100 top-0 border-bottom bg-dark d-flex ps-5 pe-5 z-3">
+    <div class="col-1 d-flex align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" class="img-fluid col-3 p-1" alt="logo">
+        <h4 class="text-white col m-0 fw-bold fs-5">Phoenix</h4>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center justify-content-center">
+      <ul class="nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-pie-chart me-2 pe-1"></i>Home</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-info" href="index.html"><i class="bi bi-cart me-2"></i>E commerce</a></li>
+            <li><a class="dropdown-item text-secondary" href="crm.html"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social feed</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-box me-2 pe-1"></i>Apps</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="index.html"><i class="bi bi-cart me-2"></i>E commerce</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="crm.html"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-chat-left me-2"></i>Cart</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-envelope me-2"></i>Email</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bookmark me-2"></i>Events</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bar-chart-steps me-2"></i>Kanban</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-images me-2 pe-1"></i>Pages</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bookmark me-2"></i>Events</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bar-chart-steps me-2"></i>Kanban</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="crm.html"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-puzzle me-2 pe-1"></i>Modules</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="crm.html"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social feed</a></li>
+            <li><a class="dropdown-item text-secondary" href="index.html"><i class="bi bi-cart me-2"></i>E commerce</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4 pe-0" href="#"><i class="bi bi-layout-wtf me-2 pe-1"></i>Documentation</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="index.html"><i class="bi bi-cart me-2"></i>E commerce</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="crm.html"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-chat-left me-2"></i>Cart</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-envelope me-2"></i>Email</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bookmark me-2"></i>Events</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bar-chart-steps me-2"></i>Kanban</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-between ps-5">
+      <span class="rounded-circle i-bg d-flex align-items-center justify-content-center ms-5"
+        style="width: 32px; height: 32px;">
+        <i class="bi bi-moon i-color ps-1"></i>
+      </span>
+      <span>
+        <i class="bi bi-search text-warning fs-5"></i>
+      </span>
+      <span>
+        <i class="bi bi-bell text-warning fs-5"></i>
+      </span>
+      <span class="pb-1">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2" r="2" fill="#8a94ad"></circle>
+          <circle cx="2" cy="8" r="2" fill="#8a94ad"></circle>
+          <circle cx="2" cy="14" r="2" fill="#8a94ad"></circle>
+          <circle cx="8" cy="8" r="2" fill="#8a94ad"></circle>
+          <circle cx="8" cy="14" r="2" fill="#8a94ad"></circle>
+          <circle cx="14" cy="8" r="2" fill="#8a94ad"></circle>
+          <circle cx="14" cy="14" r="2" fill="#8a94ad"></circle>
+          <circle cx="8" cy="2" r="2" fill="#8a94ad"></circle>
+          <circle cx="14" cy="2" r="2" fill="#8a94ad"></circle>
+        </svg>
+      </span>
+      <span class="rounded-circle overflow-hidden frame" style="--vv-frame-size: 40px">
+        <img src="images/vinit.jpeg" class="w-100 h-100 object-fit-cover">
+      </span>
+    </div>
+  </div>
+  <div class="main-wrapper text-secondary">
+    <div class="sidebar position-fixed start-0 bottom-0 border-end bg-dark p-4 overflow-auto fw-semibold"
+      id="accordionExample">
+      <nav class="pb-4 m-nav">
+        <ul class="nav flex-column mb-4">
+          <li class="nav-item mb-4">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#1">
+              <a class="nav-link text-secondary p-0" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-pie-chart me-2"></i>Home</a>
+            </button>
+            <div id="1" class="collapse show ps-4 ms-1" data-bs-parent="#accordionExample">
+              <a class="nav-link text-white" href="index.html">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM <span
+                  class="fw-normal border-opacity-25 bg-light text-light bg-opacity-10 border border-light new fs-10 ms-2">NEW</span></a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li>
+            <p class="n-heading m-0">APPS</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#2">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-cart me-2 pe-1"></i>E commerce</a>
+            </button>
+            <div id="2" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="index.html">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#3">
+              <a class="nav-link p-0 fs-13 position-relative" href="#"><i
+                  class="bi bi-caret-down-fill arrow pe-1"></i><i class="bi bi-telephone me-2 pe-1"></i>CRM <span
+                  class="position-absolute bg-light rounded-circle dot"></span></a>
+            </button>
+            <div id="3" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="index.html">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#4">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-clipboard me-2 pe-1"></i>Project management</a>
+            </button>
+            <div id="4" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="index.html">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#5">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-chat-left me-2 pe-1"></i>Cart</a>
+            </button>
+            <div id="5" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="index.html">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#6">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-envelope me-2 pe-1"></i>Email</a>
+            </button>
+            <div id="6" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#7">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-bookmark me-2 pe-1"></i>Events</a>
+            </button>
+            <div id="7" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#8">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-bar-chart-steps me-2 pe-1"></i>Kanban</a>
+              <span
+                class="fw-normal border-opacity-25 bg-light text-light bg-opacity-10 border border-light new fs-10 ms-2">NEW</span>
+            </button>
+            <div id="8" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0 d-flex align-items-center" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-share ms-1 me-2 pe-1"></i>Social</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-question-circle ms-1 me-2 pe-1"></i>FAQ</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-4">
+          <li>
+            <p class="n-heading m-0">PAGES</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-compass ms-1 me-2 pe-1"></i>Starter</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-question-circle ms-1 me-2 pe-1"></i>FAQ</a>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#8">
+              <a class="nav-link p-0 fs-13 position-relative" href="#"><i
+                  class="bi bi-caret-down-fill arrow pe-1"></i><i class="bi bi-globe2 me-2 pe-1"></i>Landing<span
+                  class="position-absolute bg-light rounded-circle dot"></span></a>
+            </button>
+            <div id="8" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-tags ms-1 me-2 pe-1"></i>Pricing</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-bell ms-1 me-2 pe-1"></i>Notifications</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-people ms-1 me-2 pe-1"></i>Members</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-clock ms-1 me-2 pe-1"></i>Timeline</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-exclamation-triangle ms-1 me-2 pe-1"></i>Errors</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-lock ms-1 me-2 pe-1"></i>Authentication</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-columns ms-1 me-2 pe-1"></i>Layouts</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-4">
+          <li>
+            <p class="n-heading m-0">MODULES</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-file-earmark-text ms-1 me-2 pe-1"></i>Forms</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-grid ms-1 me-2 pe-1"></i>Icons</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-layout-split ms-1 me-2 pe-1"></i>Tables</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-bar-chart ms-1 me-2 pe-1"></i>ECharts</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-box ms-1 me-2 pe-1"></i>Components</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-wrench-adjustable ms-1 me-2 pe-1"></i>Utilities</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-stack ms-1 me-2 pe-1"></i>Multi level</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-4">
+          <li>
+            <p class="n-heading m-0">DOCUMENTATION</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-life-preserver ms-1 me-2 pe-1"></i>Getting started</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-gear ms-1 me-2 pe-1"></i>Customization</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-columns ms-1 me-2 pe-1"></i>Layouts doc</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-cup-straw ms-1 me-2 pe-1"></i>Gulp</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-file-earmark-image ms-1 me-2 pe-1"></i>Design file</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-sign-merge-left ms-1 me-2 pe-1"></i>Changelog</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-laptop ms-1 me-2 pe-1"></i>Showcase</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="icons pb-5">
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-white fs-6 position-relative" href="javascript:;"><i
+                class="bi bi-pie-chart"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="index.html"><i class="bi bi-cart"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="crm.html"><i class="bi bi-telephone"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-clipboard"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-envelope"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6 position-relative" href="javascript:;"><i
+                class="bi bi-bookmark"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-bar-chart-steps"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-share"></i></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-question-circle"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-compass"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6 position-relative" href="javascript:;"><i
+                class="bi bi-globe2"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-tags"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-bell"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-people"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-clock"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-exclamation-triangle"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-lock"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6  position-relative" href="javascript:;"><i
+                class="bi bi-columns"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-file-earmark-text"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-grid"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-layout-split"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-bar-chart"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-box"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-wrench-adjustable"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-stack"></i></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-life-preserver"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-gear"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-columns"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-cup-straw"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-file-earmark-image"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-sign-merge-left"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-laptop"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="position-fixed bottom-0 left-0 bg-dark collapse-btn p-4 border-top">
+        <a class="nav-link text-secondary w-100 c-text1" href="javascript:;"><i
+            class="bi bi-arrow-bar-left mx-2 ps-3"></i>Collapsed View</a>
+        <a class="nav-link text-secondary c-text2" href="javascript:;"><i class="bi bi-arrow-bar-right"></i></a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container-fluid p-4 pt-3 border-bottom">
+        <div class="d-flex p-3 pb-5">
+          <div class="col-6 pe-3">
+            <div class="mb-3">
+              <h2 class="text-white fw-bolder m-0">CRM Dashboard</h2>
+              <span>Check your business growth in one place</span>
+            </div>
+            <div class="d-flex">
+              <div class="col-4 pe-2">
+                <div class="p-4 border rounded bg-dark">
+                  <div class="icon-wrapper position-relative fs-13 mb-2">
+                    <i class="bi bi-telephone-fill text-info me-3 fs-6"></i>
+                    Outgoing call
+                  </div>
+                  <p class="text-info fs-4 fw-bold border-bottom m-0 pb-4"> 3 <span class="text-secondary fs-6">Leads
+                      Today</span></p>
+                  <div class="mt-4">
+                    <span
+                      class="fw-bolder border-opacity-50 bg-success text-success bg-opacity-10 border border-success new fs-10">+24.5%</span>
+                    <p class="fs-13 m-0 mt-2 fw-light">Than Yesterday</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 px-2">
+                <div class="p-4 border rounded bg-dark">
+                  <div class="icon-wrapper position-relative fs-13 mb-2">
+                    <i class="bi bi-calendar-event-fill text-light me-3 fs-6"></i>
+                    Outgoing call
+                  </div>
+                  <p class="text-light fs-4 fw-bold border-bottom m-0 pb-4"> 12 <span class="text-secondary fs-6">This
+                      Week</span></p>
+                  <div class="mt-4">
+                    <span
+                      class="fw-bolder border-opacity-25 bg-danger text-danger bg-opacity-10 border border-danger new fs-10">+24.5%</span>
+                    <p class="fs-13 m-0 mt-2 fw-light">Than last week</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 ps-2">
+                <p class="fw-bold text-white border-bottom m-0 pb-2">Top 5 Lead Sources</p>
+                <div class="d-flex border-bottom justify-content-between">
+                  <p class="my-2 fs-13">1. None</p>
+                  <p class="fw-bold m-0 fs-13 my-2">(65)</p>
+                </div>
+                <div class="d-flex border-bottom justify-content-between">
+                  <p class="my-2 fs-13">2. Online Store</p>
+                  <p class="fw-bold m-0 fs-13 my-2">(74)</p>
+                </div>
+                <div class="d-flex border-bottom justify-content-between">
+                  <p class="my-2 fs-13">3. Advertisement</p>
+                  <p class="fw-bold m-0 fs-13 my-2">(32)</p>
+                </div>
+                <div class="d-flex border-bottom justify-content-between">
+                  <p class="my-2 fs-13">4.Seminar Partner</p>
+                  <p class="fw-bold m-0 fs-13 my-2">(25)</p>
+                </div>
+                <div class="d-flex border-bottom justify-content-between">
+                  <p class="my-2 fs-13">5.Partner</p>
+                  <p class="fw-bold m-0 fs-13 my-2">(23)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ps-3">
+            <div class="mb-1">
+              <h2 class="text-white fw-bolder m-0">Contacts Created</h2>
+              <span>Payment received across all channels</span>
+            </div>
+            <img src="images/graph.png" alt="graph" class="w-100" style="height: 245px;">
+          </div>
+        </div>
+        <div class="d-flex p-3">
+          <div class="col-6 pe-3">
+            <div class="d-flex">
+              <div class="col-8">
+                <div class="mb-3">
+                  <h3 class="text-white fw-bolder m-0">New Contacts by Source</h3>
+                  <span>Payment received across all channels</span>
+                </div>
+                <div class="d-flex flex-wrap pe-4">
+                  <div class="col-4 border-end border-bottom fs-13 ps-4 pt-2 pb-4">
+                    <i class="bi bi-square-fill text-info arrow me-2"></i>Organic
+                    <span class="fs-4 text-white d-block">80</span>
+                  </div>
+                  <div class="col-4 border-end border-bottom ps-4 pt-2 pb-4">
+                    <i class="bi bi-square-fill text-success arrow me-2"></i>Paid Search
+                    <span class="fs-4 text-white d-block">65</span>
+                  </div>
+                  <div class="col-4 border-bottom ps-4 pt-2 pb-4">
+                    <i class="bi bi-square-fill text-info arrow me-2"></i>Direct
+                    <span class="fs-4 text-white d-block">40</span>
+                  </div>
+                  <div class="col-4 border-end ps-4 pt-2 pb-4">
+                    <i class="bi bi-square-fill text-light arrow me-2"></i>Social
+                    <span class="fs-4 text-white d-block">220</span>
+                  </div>
+                  <div class="col-4 border-end ps-4 pt-2 pb-4">
+                    <i class="bi bi-square-fill text-danger arrow me-2"></i>Referrals
+                    <span class="fs-4 text-white d-block">120</span>
+                  </div>
+                  <div class="col-4 ps-4 pt-2 pb-4">
+                    <i class="bi bi-square-fill text-danger arrow me-2"></i>Others
+                    <span class="fs-4 text-white d-block">35</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 position-relative p-2 d-flex align-items-center">
+                <img src="images/g-5.png" alt="graph" class="w-100">
+                <span
+                  class="rounded-circle bg-dark position-absolute top-50 start-50 translate-middle frame fs-3 text-info fw-bolder d-flex justify-content-center align-items-center"
+                  style="--vv-frame-size:100px">560</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ps-3">
+            <div class="d-flex">
+              <div class="col-6 pe-3">
+                <h3 class="text-white fw-bolder m-0">New Users & Leads</h3>
+                <span>Payment received across all channels</span>
+                <div class="fs-5 fw-bold d-flex align-items-center my-2">
+                  <i class="bi bi-people text-light fs-4 pe-2"></i>
+                  <span>New Users :</span>
+                  <span class="text-white px-2">42</span>
+                  <span
+                    class="fw-bolder border-opacity-50 bg-success text-success bg-opacity-10 border border-success new fs-10">+24.5%
+                    <i class="bi bi-caret-up-fill"></i></span>
+                </div>
+                <img src="images/g-2.png" alt="graph" class="w-100 mt-5">
+              </div>
+              <div class="col-6 pt-5 ps-3">
+                <div class="fs-5 fw-bold d-flex align-items-center pt-4">
+                  <i class="bi bi-lightning-charge fs-4 pe-2 text-info"></i>
+                  <span>New Leads :</span>
+                  <span class="text-white px-2">45</span>
+                  <span
+                    class="fw-bolder border-opacity-50 bg-success text-success bg-opacity-10 border border-success new fs-10">+30.5%
+                    <i class="bi bi-caret-up-fill"></i></span>
+                </div>
+                <img src="images/g-3.png" alt="graph" class="w-100 mt-5">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex my-3">
+          <div class="col-5 pe-4">
+            <div class="p-4 border bg-dark rounded">
+              <h3 class="text-white fw-bolder m-0">Lead Conversion</h3>
+              <span>Stages of deals & conversion</span>
+              <img src="images/g-6.png" alt="chart" class="img-fluid pt-1">
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="p-4 border bg-dark rounded">
+              <h3 class="text-white fw-bolder m-0">Revenue Target</h3>
+              <span>Country-wise target fulfilment</span>
+              <img src="images/g-7.png" alt="chart" class="img-fluid pt-3">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex mt-5">
+          <div class="col-6 pe-3">
+            <div class="d-flex justify-content-between pb-4">
+              <div class="col-5">
+                <h4 class="text-white fw-bolder m-0">Ad Clicks</h4>
+                <span>Check effectiveness of your ads</span>
+              </div>
+              <div class="col-4">
+                <select class="form-select bg-dark text-secondary fs-13" aria-label="Default select example">
+                  <option selected>Mar 1 - 30, 2023</option>
+                  <option value="1">June 1 - 31, 2023</option>
+                  <option value="2">July 1 - 30, 2023</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <img src="images/g-4.png" alt="chart1" class="w-100" style="height: 370px;">
+            </div>
+          </div>
+          <div class="col-6 ps-3">
+            <div class="d-flex justify-content-between pb-4">
+              <div class="col-5">
+                <h4 class="text-white fw-bolder m-0">Deal Forecast <span class="fw-bold">- $90,303</span></h4>
+                <span>Show what you offer here</span>
+              </div>
+              <div class="col-4">
+                <select class="form-select bg-dark text-secondary fs-13" aria-label="Default select example">
+                  <option selected>May 1 - 30, 2023</option>
+                  <option value="1">June 1 - 31, 2023</option>
+                  <option value="2">July 1 - 30, 2023</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex fs-13">
+              <div class="col-2 pe-1">$21.0k</div>
+              <div class="col-4 pe-1">$3.4k</div>
+              <div class="col-3 pe-1">$15.1k</div>
+              <div class="col-3">$4.6k</div>
+            </div>
+            <div class="d-flex rounded overflow-hidden my-3 mt-2">
+              <div class="col-2 pe-1"><div class="p-1 bg-info"></div></div>
+              <div class="col-4 pe-1"><div class="p-1 bg-danger"></div></div>
+              <div class="col-3 pe-1"><div class="p-1 bg-light"></div></div>
+              <div class="col-3"><div class="p-1 bg-success"></div></div>
+            </div>
+            <p class="m-0 fs-5 text-white fw-bold mb-2">Deal Forecast by Owner</p>
+            <table class="table text-secondary fs-13">
+              <tbody>
+                <tr class="border-top">
+                  <th class="col border-end ps-0">CONTACT <i class="bi bi-arrow-down-up arrow"></i></th>
+                  <th class="col border-end text-end pe-3"><span
+                      class="bg-light dot d-inline-block me-2"></span>APPOINTMENT &nbsp;<i
+                      class="bi bi-arrow-down-up arrow"></i></th>
+                  <th class="col border-end text-end pe-3"><span
+                      class="bg-light dot d-inline-block me-2"></span>QUALIFIED &nbsp;<i
+                      class="bi bi-arrow-down-up arrow"></i></th>
+                  <th class="col border-end text-end pe-3"><span class="bg-light dot d-inline-block me-2"></span>CLOSED
+                    WON &nbsp;<i class="bi bi-arrow-down-up arrow"></i></th>
+                  <th class="col text-end pe-3"><span class="bg-light dot d-inline-block me-2"></span>CONTACT SENT
+                    &nbsp;<i class="bi bi-arrow-down-up arrow"></i></th>
+                </tr>
+                <tr>
+                  <th class="col border-end text-info ps-0">Carrie Anne</th>
+                  <th class="col border-end text-end pe-3">1000</th>
+                  <th class="col border-end text-end pe-3">$1256</th>
+                  <th class="col border-end text-end pe-3">$1200</th>
+                  <th class="col text-end pe-3">$1200</th>
+                </tr>
+                <tr>
+                  <th class="col border-end text-info ps-0">Milind Mikuja</th>
+                  <th class="col border-end text-end pe-3">558</th>
+                  <th class="col border-end text-end pe-3">$2531</th>
+                  <th class="col border-end text-end pe-3">$2200</th>
+                  <th class="col text-end pe-3">$2200</th>
+                </tr>
+                <tr>
+                  <th class="col border-end text-info ps-0">Stanley Drinkwater</th>
+                  <th class="col border-end text-end pe-3">1100</th>
+                  <th class="col border-end text-end pe-3">$100</th>
+                  <th class="col border-end text-end pe-3">$100</th>
+                  <th class="col text-end pe-3">$100</th>
+                </tr>
+                <tr>
+                  <th class="col border-end text-info ps-0">Josef Stravinsky</th>
+                  <th class="col border-end text-end pe-3">856</th>
+                  <th class="col border-end text-end pe-3">$326</th>
+                  <th class="col border-end text-end pe-3">$265</th>
+                  <th class="col text-end pe-3">$265</th>
+                </tr>
+                <tr>
+                  <th class="col border-end text-info ps-0">Roy Anderson</th>
+                  <th class="col border-end text-end pe-3">1200</th>
+                  <th class="col border-end text-end pe-3">$1452</th>
+                  <th class="col border-end text-end pe-3">$865</th>
+                  <th class="col text-end pe-3">$865</th>
+                </tr>
+                <tr class="text-white">
+                  <th class="col border-bottom-0 pb-0 border-end text-info"></th>
+                  <th class="col border-bottom-0 pb-0 border-end text-end pe-3">4744</th>
+                  <th class="col border-bottom-0 pb-0 border-end text-end pe-3">$5665</th>
+                  <th class="col border-bottom-0 pb-0 border-end text-end pe-3">$4630</th>
+                  <th class="col border-bottom-0 pb-0 text-end pe-3">$4630</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center px-5 text-secondary" style="height: 66.5px;">
+        <p class="m-0">Thank you for creating with Phoenix | 2023 © <span class="text-info"> VINIT Viradiya</span></p>
+        <span>v1.11.0</span>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <!-- Sidebar -->
+  <script>
+    $(document).ready(function () {
+      $(".collapse-btn").click(function () {
+        $(".sidebar").toggleClass("sw");
+        $(".main-content").toggleClass("sw");
+        $(".m-nav").toggleClass("d-none");
+        $(".icons").toggleClass("d-block");
+        $(".c-text1").toggleClass("d-none");
+        $(".c-text2").toggleClass("d-block");
+      });
+    });
+  </script>
+</body>
+
+</html>

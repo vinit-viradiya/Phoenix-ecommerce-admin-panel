@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <title>Phoenix</title>
+</head>
+
+<body>
+
+  <div class="main-header position-fixed w-100 top-0 border-bottom bg-dark d-flex ps-5 pe-5 z-3">
+    <div class="col-1 d-flex align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" class="img-fluid col-3 p-1" alt="logo">
+        <h4 class="text-white col m-0 fw-bold fs-5">Phoenix</h4>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center justify-content-center">
+      <ul class="nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="javascript:;"><i class="bi bi-pie-chart me-2 pe-1"></i>Home</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-info" href=""><i class="bi bi-cart me-2"></i>E commerce</a></li>
+            <li><a class="dropdown-item text-secondary" href="crm.html"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social feed</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-box me-2 pe-1"></i>Apps</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-cart me-2"></i>E commerce</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-chat-left me-2"></i>Cart</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-envelope me-2"></i>Email</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bookmark me-2"></i>Events</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bar-chart-steps me-2"></i>Kanban</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-images me-2 pe-1"></i>Pages</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bookmark me-2"></i>Events</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bar-chart-steps me-2"></i>Kanban</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4" href="#"><i class="bi bi-puzzle me-2 pe-1"></i>Modules</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social feed</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-cart me-2"></i>E commerce</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-4 pe-0" href="#"><i class="bi bi-layout-wtf me-2 pe-1"></i>Documentation</a>
+          <ul class="dropdown-menu bg-dark border">
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-cart me-2"></i>E commerce</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-telephone me-2"></i>CRM</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-clipboard me-2"></i>Project
+                management</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-chat-left me-2"></i>Cart</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-envelope me-2"></i>Email</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bookmark me-2"></i>Events</a></li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-bar-chart-steps me-2"></i>Kanban</a>
+            </li>
+            <li><a class="dropdown-item text-secondary" href="#"><i class="bi bi-share me-2"></i>Social</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-between ps-5">
+      <span class="rounded-circle i-bg d-flex align-items-center justify-content-center ms-5"
+        style="width: 32px; height: 32px;">
+        <i class="bi bi-moon i-color ps-1"></i>
+      </span>
+      <span>
+        <i class="bi bi-search text-warning fs-5"></i>
+      </span>
+      <span>
+        <i class="bi bi-bell text-warning fs-5"></i>
+      </span>
+      <span class="pb-1">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2" r="2" fill="#8a94ad"></circle>
+          <circle cx="2" cy="8" r="2" fill="#8a94ad"></circle>
+          <circle cx="2" cy="14" r="2" fill="#8a94ad"></circle>
+          <circle cx="8" cy="8" r="2" fill="#8a94ad"></circle>
+          <circle cx="8" cy="14" r="2" fill="#8a94ad"></circle>
+          <circle cx="14" cy="8" r="2" fill="#8a94ad"></circle>
+          <circle cx="14" cy="14" r="2" fill="#8a94ad"></circle>
+          <circle cx="8" cy="2" r="2" fill="#8a94ad"></circle>
+          <circle cx="14" cy="2" r="2" fill="#8a94ad"></circle>
+        </svg>
+      </span>
+      <span class="rounded-circle overflow-hidden frame" style="--vv-frame-size: 40px">
+        <img src="images/vinit.jpeg" class="w-100 h-100 object-fit-cover">
+      </span>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <div class="sidebar position-fixed start-0 bottom-0 border-end bg-dark p-4 overflow-auto fw-semibold"
+      id="accordionExample">
+      <nav class="pb-4 m-nav">
+        <ul class="nav flex-column mb-4">
+          <li class="nav-item mb-4">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#1">
+              <a class="nav-link text-secondary p-0" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-pie-chart me-2"></i>Home</a>
+            </button>
+            <div id="1" class="collapse show ps-4 ms-1" data-bs-parent="#accordionExample">
+              <a class="nav-link text-white" href="index.html">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="crm.html">CRM <span
+                  class="fw-normal border-opacity-25 bg-light text-light bg-opacity-10 border border-light new fs-10 ms-2">NEW</span></a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li>
+            <p class="n-heading m-0">APPS</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#2">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-cart me-2 pe-1"></i>E commerce</a>
+            </button>
+            <div id="2" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#3">
+              <a class="nav-link p-0 fs-13 position-relative" href="#"><i
+                  class="bi bi-caret-down-fill arrow pe-1"></i><i class="bi bi-telephone me-2 pe-1"></i>CRM <span
+                  class="position-absolute bg-light rounded-circle dot"></span></a>
+            </button>
+            <div id="3" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#4">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-clipboard me-2 pe-1"></i>Project management</a>
+            </button>
+            <div id="4" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#5">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-chat-left me-2 pe-1"></i>Cart</a>
+            </button>
+            <div id="5" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#6">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-envelope me-2 pe-1"></i>Email</a>
+            </button>
+            <div id="6" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#7">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-bookmark me-2 pe-1"></i>Events</a>
+            </button>
+            <div id="7" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#8">
+              <a class="nav-link p-0 fs-13" href="#"><i class="bi bi-caret-down-fill arrow pe-1"></i><i
+                  class="bi bi-bar-chart-steps me-2 pe-1"></i>Kanban</a>
+              <span
+                class="fw-normal border-opacity-25 bg-light text-light bg-opacity-10 border border-light new fs-10 ms-2">NEW</span>
+            </button>
+            <div id="8" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0 d-flex align-items-center" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-share ms-1 me-2 pe-1"></i>Social</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-question-circle ms-1 me-2 pe-1"></i>FAQ</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-4">
+          <li>
+            <p class="n-heading m-0">PAGES</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-compass ms-1 me-2 pe-1"></i>Starter</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-question-circle ms-1 me-2 pe-1"></i>FAQ</a>
+          </li>
+          <li class="nav-item py-1">
+            <button class="accordion-button bg-transparent shadow-none p-0" data-bs-toggle="collapse"
+              data-bs-target="#8">
+              <a class="nav-link p-0 fs-13 position-relative" href="#"><i
+                  class="bi bi-caret-down-fill arrow pe-1"></i><i class="bi bi-globe2 me-2 pe-1"></i>Landing<span
+                  class="position-absolute bg-light rounded-circle dot"></span></a>
+            </button>
+            <div id="8" class="collapse ps-4" data-bs-parent="#accordionExample">
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+              <a class="nav-link" href="#">E commerce</a>
+              <a class="nav-link py-1" href="#">Project management</a>
+              <a class="nav-link py-1" href="#">CRM</a>
+              <a class="nav-link" href="#">Social feed</a>
+            </div>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-tags ms-1 me-2 pe-1"></i>Pricing</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-bell ms-1 me-2 pe-1"></i>Notifications</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-people ms-1 me-2 pe-1"></i>Members</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-clock ms-1 me-2 pe-1"></i>Timeline</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-exclamation-triangle ms-1 me-2 pe-1"></i>Errors</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-lock ms-1 me-2 pe-1"></i>Authentication</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-columns ms-1 me-2 pe-1"></i>Layouts</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-4">
+          <li>
+            <p class="n-heading m-0">MODULES</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-file-earmark-text ms-1 me-2 pe-1"></i>Forms</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-grid ms-1 me-2 pe-1"></i>Icons</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-layout-split ms-1 me-2 pe-1"></i>Tables</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-bar-chart ms-1 me-2 pe-1"></i>ECharts</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-box ms-1 me-2 pe-1"></i>Components</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-wrench-adjustable ms-1 me-2 pe-1"></i>Utilities</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-stack ms-1 me-2 pe-1"></i>Multi level</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column mb-4">
+          <li>
+            <p class="n-heading m-0">DOCUMENTATION</p>
+          </li>
+          <li class="nav-item py-1 pt-3">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-life-preserver ms-1 me-2 pe-1"></i>Getting started</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-gear ms-1 me-2 pe-1"></i>Customization</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-columns ms-1 me-2 pe-1"></i>Layouts doc</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-cup-straw ms-1 me-2 pe-1"></i>Gulp</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-file-earmark-image ms-1 me-2 pe-1"></i>Design file</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-sign-merge-left ms-1 me-2 pe-1"></i>Changelog</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link p-0" href="#"><i class="bi bi-caret-right-fill arrow"></i><i
+                class="bi bi-laptop ms-1 me-2 pe-1"></i>Showcase</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="icons pb-5">
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-white fs-6 position-relative" href="javascript:;"><i
+                class="bi bi-pie-chart"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="index.html"><i class="bi bi-cart"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="crm.html"><i class="bi bi-telephone"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-clipboard"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-envelope"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6 position-relative" href="javascript:;"><i
+                class="bi bi-bookmark"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-bar-chart-steps"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-share"></i></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-question-circle"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-compass"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6 position-relative" href="javascript:;"><i
+                class="bi bi-globe2"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-tags"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-bell"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-people"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-clock"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-exclamation-triangle"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-lock"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6  position-relative" href="javascript:;"><i
+                class="bi bi-columns"></i><span class="position-absolute bg-light rounded-circle dot"></span></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-file-earmark-text"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-grid"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-layout-split"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-bar-chart"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-box"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-wrench-adjustable"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-stack"></i></a>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-life-preserver"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-gear"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-columns"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-cup-straw"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-file-earmark-image"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-sign-merge-left"></i></a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-secondary fs-6" href="javascript:;"><i class="bi bi-laptop"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="position-fixed bottom-0 left-0 bg-dark collapse-btn p-4 border-top">
+        <a class="nav-link text-secondary w-100 c-text1" href="javascript:;"><i
+            class="bi bi-arrow-bar-left mx-2 ps-3"></i>Collapsed View</a>
+        <a class="nav-link text-secondary c-text2" href="javascript:;"><i class="bi bi-arrow-bar-right"></i></a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container-fluid p-3 text-secondary border-bottom">
+        <div class="d-flex">
+          <div class="col-6 p-3 pe-2 pb-0">
+            <div>
+              <h2 class="text-white fw-bolder m-0">Ecommerce Dashboard</h2>
+              <span>Here’s what’s going on at your business right now</span>
+            </div>
+            <div class="d-flex mt-5 mb-3">
+              <div class="col">
+                <div class="d-flex align-items-center">
+                  <div class="col-3">
+                    <img src="images/i-1.png" class="img-fluid p-1">
+                  </div>
+                  <div class="col-9 ps-2">
+                    <p class="text-white fw-bold fs-5 m-0 lh-1">57 new orders</p>
+                    <p class="fs-13 m-0">Awating processing</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="col-3">
+                    <img src="images/i-2.png" class="img-fluid p-1">
+                  </div>
+                  <div class="col-6 ps-2">
+                    <p class="text-white fw-bold fs-5 m-0 lh-1">5 orders</p>
+                    <p class="fs-13 m-0">On hold</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-flex align-items-center">
+                  <div class="col-3">
+                    <img src="images/i-3.png" class="img-fluid p-1">
+                  </div>
+                  <div class="col-9 ps-2">
+                    <p class="text-white fw-bold fs-5 m-0 lh-1">15 Products</p>
+                    <p class="fs-13 m-0">Out of stock</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-end py-3 border-top">
+              <div class="col-5 pt-1">
+                <h4 class="text-white fw-bolder m-0">Total sells</h4>
+                <span>Payment received across all channels</span>
+              </div>
+              <div class="col-4">
+                <select class="form-select bg-dark text-secondary fs-13" aria-label="Default select example">
+                  <option selected>May 1 - 30, 2023</option>
+                  <option value="1">June 1 - 31, 2023</option>
+                  <option value="2">July 1 - 30, 2023</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <img src="images/chart1.png" alt="chart1" class="img-fluid pt-3">
+            </div>
+          </div>
+          <div class="col-6 p-3">
+            <div class="d-flex flex-wrap">
+              <div class="col-6 pe-2 pb-2">
+                <div class="card overflow-hidden chart bg-dark p-4 border text-secondary">
+                  <div class="d-flex justify-content-between">
+                    <div class="col-9">
+                      <p class="fw-bold m-0 text-white">Total orders<span
+                          class="border-opacity-25 bg-danger text-danger bg-opacity-10 border border-danger new fs-13 ms-3 rounded-pill">-6.8%</span>
+                      </p>
+                      <p class="fs-13 m-0">Last 7 days</p>
+                    </div>
+                    <div class="col-3 text-end">
+                      <span class="fw-bold fs-5 text-white">16,247</span>
+                    </div>
+                  </div>
+                  <div class="text-center py-4 my-2">
+                    <img src="images/chart2.png" alt="chart2" class="img-fluid">
+                  </div>
+                  <div class="d-flex fs-13 justify-content-between">
+                    <div>
+                      <p class="m-0"><span class="bg-info ps-1 d-inline-block bullet me-2"></span>Completed</p>
+                      <p class="m-0"><span class="bg-secondary-subtle ps-1 d-inline-block bullet me-2"></span>Pending
+                        payment</p>
+                    </div>
+                    <div>
+                      <p class="m-0">48%</p>
+                      <p class="m-0">52%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ps-2 pb-2">
+                <div class="card chart bg-dark p-4 border text-secondary">
+                  <div class="d-flex justify-content-between">
+                    <div class="col-9">
+                      <p class="fw-bold m-0 text-white">New customers<span
+                          class="border-opacity-25 bg-danger text-danger bg-opacity-10 border border-danger new fs-13 ms-3 rounded-pill">-26.9%</span>
+                      </p>
+                      <p class="fs-13">Last 7 days</p>
+                    </div>
+                    <div class="col-3 text-end">
+                      <span class="fw-bold fs-5 text-white">358</span>
+                    </div>
+                  </div>
+                  <div class="text-center py-1">
+                    <img src="images/chart3.png" alt="chart2" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 pt-2 pe-2">
+                <div class="card chart bg-dark p-4 border text-secondary">
+                  <div class="d-flex justify-content-between">
+                    <div class="col">
+                      <p class="fw-bold m-0 text-white">Top coupons</p>
+                      <p class="fs-13 m-0">Last 7 days</p>
+                    </div>
+                  </div>
+                  <div class="text-center py-2 my-1">
+                    <img src="images/chart4.png" alt="chart2" class="img-fluid">
+                  </div>
+                  <div class="d-flex fs-13 justify-content-between">
+                    <div>
+                      <p class="m-0"><span class="bg-info ps-1 d-inline-block bullet me-2"></span>Percentage discount
+                      </p>
+                      <p class="m-0"><span class="bg-secondary-subtle ps-1 d-inline-block bullet me-2"></span>Fixed card
+                        discount</p>
+                      <p class="m-0"><span class="bg-info ps-1 d-inline-block bullet me-2"></span>Fixed product discount
+                      </p>
+                    </div>
+                    <div>
+                      <p class="m-0">72%</p>
+                      <p class="m-0">18%</p>
+                      <p class="m-0">10%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 ps-2 pt-2">
+                <div class="card chart bg-dark p-4 border text-secondary">
+                  <div class="d-flex justify-content-between">
+                    <div class="col">
+                      <p class="fw-bold m-0 text-white">Paying vs non paying</p>
+                      <p class="fs-13">Last 7 days</p>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img src="images/chart5.png" alt="chart2" class="img-fluid">
+                  </div>
+                  <div class="d-flex fs-13 justify-content-between">
+                    <div>
+                      <p class="m-0"><span class="bg-info ps-1 d-inline-block bullet me-2"></span>Paying customer</p>
+                      <p class="m-0"><span class="bg-secondary-subtle ps-1 d-inline-block bullet me-2"></span>Non-paying
+                        customer</p>
+                    </div>
+                    <div>
+                      <p class="m-0">30%</p>
+                      <p class="m-0">70%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark p-5 pb-0 border-bottom text-secondary">
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-end p-0 mb-4 pb-2">
+            <div class="col-5">
+              <h4 class="text-white fw-bolder m-0">Total sells</h4>
+              <span>Payment received across all channels</span>
+            </div>
+            <div class="col-4 row justify-content-between gx-2">
+              <div class="col-8">
+                <div class="input-group">
+                  <div class="input-group-text bg-transparent text-secondary"><i class="bi bi-search"></i></div>
+                  <input type="text" class="form-control text-secondary bg-transparent shadow-none"
+                    id="autoSizingInputGroup" placeholder="Search...">
+                </div>
+              </div>
+              <div class="col-3"><button type="button" class="btn w-100 h-100 border text-secondary fs-13">ALL
+                  Products</button></div>
+              <div class="col-1"><button type="button" class="btn w-100 h-100 border text-secondary">...</button></div>
+            </div>
+          </div>
+          <table class="table fs-13 text-secondary m-0">
+            <tbody>
+              <tr class="d-flex align-items-center fw-bold border-bottom border-top py-2">
+                <td class="border-0 p-0 col-1"><input class="form-check-input bg-transparent fs-6 m-0" type="checkbox">
+                </td>
+                <td class="border-0 p-0 col-2">
+                  <p class="m-0">PRODUCT</p>
+                </td>
+                <td class="border-0 p-0 col-2 ps-5">
+                  <p class="m-0">COSTOMER</p>
+                </td>
+                <td class="border-0 p-0 col-1">
+                  <p class="m-0">RATING</p>
+                </td>
+                <td class="border-0 p-0 col-4">
+                  <p class="m-0">REVIEW</p>
+                </td>
+                <td class="border-0 p-0 col-1">
+                  <p class="m-0">STATUS</p>
+                </td>
+                <td class="border-0 p-0 col-1">
+                  <p class="m-0">TIME</p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center border-bottom">
+                <td class="col-1 border-0 py-2 px-0 d-flex align-items-center">
+                  <input class="form-check-input bg-transparent fs-6 me-4" type="checkbox">
+                  <span class="rounded overflow-hidden frame border d-inline-block" style="--vv-frame-size: 53px">
+                    <img src="images/t-1.png" class="img-fluid">
+                  </span>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <p class="i-color m-0">Fitbit Sense Advanced Smartwatch with Tools fo...</p>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <div class="d-flex align-items-center ps-5">
+                    <span class="rounded-circle overflow-hidden frame border d-inline-block"
+                      style="--vv-frame-size: 40px">
+                      <img src="images/u-1.jpg" class="img-fluid">
+                    </span>
+                    <p class="m-0 fw-bold ms-3">Ashley Garrett</p>
+                  </div>
+                </td>
+                <td class="col-1 border-0 py-2 px-0 text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </td>
+                <td class="col-4 border-0 py-2 px-0 pe-5">
+                  <p class="m-0 fw-bold">This Fitbit is fantastic! I was trying to be in better shape and needed some
+                    motivation, so I decided to treat myself to a new Fitbit.</p>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <span class="border border-success text-success rounded px-2">APPROVED <i
+                      class="bi bi-check2"></i></span>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <p class="fw-bold text-white m-0">Just now<i class="bi bi-three-dots ms-5"></i></p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center border-bottom">
+                <td class="col-1 border-0 py-2 px-0 d-flex align-items-center">
+                  <input class="form-check-input bg-transparent fs-6 me-4" type="checkbox">
+                  <span class="rounded overflow-hidden frame border d-inline-block" style="--vv-frame-size: 53px">
+                    <img src="images/t-2.png" class="img-fluid">
+                  </span>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <p class="i-color m-0">iPhone 13 pro max-Pacific Blue-128GB storage</p>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <div class="d-flex align-items-center ps-5">
+                    <span class="rounded-circle overflow-hidden frame border d-inline-block"
+                      style="--vv-frame-size: 40px">
+                      <img src="images/u-2.jpg" class="img-fluid">
+                    </span>
+                    <p class="m-0 fw-bold ms-3">Richard Dawkins</p>
+                  </div>
+                </td>
+                <td class="col-1 border-0 py-2 px-0 text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </td>
+                <td class="col-4 border-0 py-2 px-0 pe-5">
+                  <p class="m-0 fw-bold">The order was delivered ahead of schedule. To give us additional time, you
+                    should leave the packaging sealed with plastic.</p>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <span class="border border-success text-success rounded fs-13 px-2">APPROVED <i
+                      class="bi bi-check2"></i></span>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <p class="fw-bold text-white m-0">Just now<i class="bi bi-three-dots ms-5"></i></p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center border-bottom">
+                <td class="col-1 border-0 py-2 px-0 d-flex align-items-center">
+                  <input class="form-check-input bg-transparent fs-6 me-4" type="checkbox">
+                  <span class="rounded overflow-hidden frame border d-inline-block" style="--vv-frame-size: 53px">
+                    <img src="images/t-3.png" class="img-fluid">
+                  </span>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <p class="i-color m-0">Apple MacBook Pro 13 inch-M1-8/256GB-space</p>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <div class="d-flex align-items-center ps-5">
+                    <span class="rounded-circle overflow-hidden frame border d-inline-block"
+                      style="--vv-frame-size: 40px">
+                      <img src="images/u-3.jpg" class="img-fluid">
+                    </span>
+                    <p class="m-0 fw-bold ms-3">Woodrow Burton</p>
+                  </div>
+                </td>
+                <td class="col-1 border-0 py-2 px-0 text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </td>
+                <td class="col-4 border-0 py-2 px-0 pe-5">
+                  <p class="m-0 fw-bold">It's a Mac, after all. Once you've gone Mac, there's no going back. My first
+                    Mac lasted over nine years, and this is my second.</p>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <span class="border border-danger text-danger rounded px-2">PENDING <i class="bi bi-clock"></i></span>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <p class="fw-bold text-white m-0">Just now<i class="bi bi-three-dots ms-5"></i></p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center border-bottom">
+                <td class="col-1 border-0 py-2 px-0 d-flex align-items-center">
+                  <input class="form-check-input bg-transparent fs-6 me-4" type="checkbox">
+                  <span class="rounded overflow-hidden frame border d-inline-block" style="--vv-frame-size: 53px">
+                    <img src="images/t-4.png" class="img-fluid">
+                  </span>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <p class="i-color m-0">Apple iMac 24" 4K Retina Display M1 8 Core CPU...</p>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <div class="d-flex align-items-center ps-5">
+                    <span class="rounded-circle overflow-hidden frame border d-inline-block"
+                      style="--vv-frame-size: 40px">
+                      <img src="images/u-4.jpg" class="img-fluid">
+                    </span>
+                    <p class="m-0 fw-bold ms-3">Eric McGee</p>
+                  </div>
+                </td>
+                <td class="col-1 border-0 py-2 px-0 text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </td>
+                <td class="col-4 border-0 py-2 px-0 pe-5">
+                  <p class="m-0 fw-bold">Personally, I like the minimalist style, but I wouldn't choose it if I were
+                    searching for a computer that I would use frequently. It's...</p>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <span class="border border-success text-success rounded px-2">APPROVED <i
+                      class="bi bi-check2"></i></span>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <p class="fw-bold text-white m-0">Nov 09, 3:23 AM</p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center border-bottom">
+                <td class="col-1 border-0 py-2 px-0 d-flex align-items-center">
+                  <input class="form-check-input bg-transparent fs-6 me-4" type="checkbox">
+                  <span class="rounded overflow-hidden frame border d-inline-block" style="--vv-frame-size: 53px">
+                    <img src="images/t-6.png" class="img-fluid">
+                  </span>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <p class="i-color m-0">Razer Kraken v3 x Wired 7.1 Surroung Sound Gam...</p>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <div class="d-flex align-items-center ps-5">
+                    <span class="rounded-circle overflow-hidden frame border d-inline-block"
+                      style="--vv-frame-size: 40px">
+                      <img src="images/u-6.jpg" class="img-fluid">
+                    </span>
+                    <p class="m-0 fw-bold ms-3">Kim Carroll</p>
+                  </div>
+                </td>
+                <td class="col-1 border-0 py-2 px-0 text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </td>
+                <td class="col-4 border-0 py-2 px-0 pe-5">
+                  <p class="m-0 fw-bold">It performs exactly as expected. There are three of these in the family.</p>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <span class="border border-success text-success rounded px-2">APPROVED <i
+                      class="bi bi-check2"></i></span>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <p class="fw-bold text-white m-0">Nov 09, 2:15 AM</p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center border-bottom">
+                <td class="col-1 border-0 py-2 px-0 d-flex align-items-center">
+                  <input class="form-check-input bg-transparent fs-6 me-4" type="checkbox">
+                  <span class="rounded overflow-hidden frame border d-inline-block" style="--vv-frame-size: 53px">
+                    <img src="images/t-5.png" class="img-fluid">
+                  </span>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <p class="i-color m-0"> Razer Kraken v3 x Wired 7.1 Surroung Sound Gam...</p>
+                </td>
+                <td class="col-2 border-0 py-2 px-0">
+                  <div class="d-flex align-items-center ps-5">
+                    <span class="rounded-circle overflow-hidden frame border d-inline-block"
+                      style="--vv-frame-size: 40px">
+                      <img src="images/u-7.jpg" class="img-fluid">
+                    </span>
+                    <p class="m-0 fw-bold ms-3">Emma watson</p>
+                  </div>
+                </td>
+                <td class="col-1 border-0 py-2 px-0 text-danger">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </td>
+                <td class="col-4 border-0 py-2 px-0 pe-5">
+                  <p class="m-0 fw-bold">The response time and service I received when contacted the designers were
+                    Phenomenal!</p>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <span class="border border-danger text-danger rounded px-2">PENDING <i class="bi bi-clock"></i></span>
+                </td>
+                <td class="col-1 border-0 py-2 px-0">
+                  <p class="fw-bold text-white m-0">Just now<i class="bi bi-three-dots ms-5"></i></p>
+                </td>
+              </tr>
+              <tr class="d-flex align-items-center justify-content-between py-1">
+                <td class="border-0">
+                  <span>1 to 15 Items of 15</span>
+                  <span class="i-color ps-3 btn">View Less</span>
+                </td>
+                <td class="border-0 btn text-secondary"><i class="bi bi-arrow-left-short"></i> Previous &nbsp; Next <i
+                    class="bi bi-arrow-right-short"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container-fluid p-0 text-secondary border-bottom">
+        <div class="d-flex">
+          <div class="col-6 p-4 pb-0">
+            <div class="p-3 pb-0">
+              <div>
+                <h4 class="text-white fw-bolder m-0">Top regions by revenue</h4>
+                <span>Where you generated most of the revenue</span>
+              </div>
+              <table class="table fs-13 text-secondary m-0 fs-13 mt-4">
+                <tbody>
+                  <tr
+                    class="d-flex align-items-center justify-content-between fw-bold border-top border-bottom fs-10 py-2">
+                    <td class="border-0 p-0 col-3">
+                      <p class="m-0">COUNTRY</p>
+                    </td>
+                    <td class="border-0 p-0 col-2">
+                      <p class="m-0">USERS</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 text-end">
+                      <p class="m-0">TRANSACTIONS</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 text-end">
+                      <p class="m-0">REVENUE</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 text-end">
+                      <p class="m-0">CONV. RATE</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex alig0-items-center justify-content-between text-white border-bottom py-3">
+                    <td class="border-0 p-0 col-3">
+                      <p class="m-0"></p>
+                    </td>
+                    <td class="border-0 p-0 col-2 fs-5">
+                      <p class="m-0">377,620</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 fs-5 text-end">
+                      <p class="m-0">236</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 fs-5 text-end">
+                      <p class="m-0">$15,758</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 fs-5 text-end">
+                      <p class="m-0">10.32%</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex align-items-center justify-content-between border-bottom py-3">
+                    <td class="border-0 p-0 col-3 text-white">1. <img src="images/india.png" class="img-fluid pe-3 ps-2"
+                        alt="img">
+                      <p class="text-info d-inline-block m-0">India</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex">
+                      <p class="text-white pe-2 m-0">92896</p>
+                      <p class="text-secondary m-0">(41.6%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">67</p>
+                      <p class="text-secondary m-0">(34.3%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">$7560</p>
+                      <p class="text-secondary m-0">(36.9%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">14.01%</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex align-items-center justify-content-between border-bottom py-3">
+                    <td class="border-0 p-0 col-3 text-white">2. <img src="images/china.png" class="img-fluid pe-3 ps-2"
+                        alt="img">
+                      <p class="text-info d-inline-block m-0">China</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex">
+                      <p class="text-white pe-2 m-0">50496</p>
+                      <p class="text-secondary m-0">(32.8%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">54</p>
+                      <p class="text-secondary m-0">(23.8%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">$6532</p>
+                      <p class="text-secondary m-0">(26.8%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">23.56%</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex align-items-center justify-content-between border-bottom py-3">
+                    <td class="border-0 p-0 col-3 text-white">3. <img src="images/usa.png" class="img-fluid pe-3 ps-2"
+                        alt="img">
+                      <p class="text-info d-inline-block m-0">USA</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex">
+                      <p class="text-white pe-2 m-0">45679</p>
+                      <p class="text-secondary m-0">(24.3%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">35</p>
+                      <p class="text-secondary m-0">(19.7%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">$5432</p>
+                      <p class="text-secondary m-0">(16.9%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">10.23%</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex align-items-center justify-content-between border-bottom py-3">
+                    <td class="border-0 p-0 col-3 text-white">4. <img src="images/south-korea.png"
+                        class="img-fluid pe-3 ps-2" alt="img">
+                      <p class="text-info d-inline-block m-0">South Korea</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex">
+                      <p class="text-white pe-2 m-0">36453</p>
+                      <p class="text-secondary m-0">(19.7%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">22</p>
+                      <p class="text-secondary m-0">(9.54%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">$4673</p>
+                      <p class="text-secondary m-0">(16.9%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">8.01%</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex align-items-center justify-content-between border-bottom py-3">
+                    <td class="border-0 p-0 col-3 text-white">5. <img src="images/vietnam.png"
+                        class="img-fluid pe-3 ps-2" alt="img">
+                      <p class="text-info d-inline-block m-0">Vietnam</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex">
+                      <p class="text-white pe-2 m-0">78896</p>
+                      <p class="text-secondary m-0">(21.7%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">45</p>
+                      <p class="text-secondary m-0">(74.3%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">$7896</p>
+                      <p class="text-secondary m-0">(36.9%)</p>
+                    </td>
+                    <td class="border-0 p-0 col-2 d-flex justify-content-end">
+                      <p class="text-white pe-2 m-0">24.45%</p>
+                    </td>
+                  </tr>
+                  <tr class="d-flex align-items-center justify-content-between">
+                    <td class="border-0 px-0">
+                      <span>1 to 15 Items of 15</span>
+                    </td>
+                    <td class="i-color btn fs-13 px-0">View All <i class="bi bi-arrow-right-short"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-6 ps-5">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-secondary bg-dark p-4 pb-5 border-bottom">
+        <div class="d-flex p-3 pb-0">
+          <div class="col-6 d-flex pe-4 flex-wrap">
+            <div class="col-6">
+              <h4 class="text-white fw-bolder m-0">Projection vs actual</h4>
+              <span>Actual earnings vs projected earnings</span>
+            </div>
+            <img src="images/chart6.png" alt="chart6" class="img-fluid pe-3">
+          </div>
+          <div class="col-6 d-flex ps-4 flex-wrap">
+            <div class="col-6">
+              <h4 class="text-white fw-bolder m-0">Returning customer rate</h4>
+              <span>Rate of customers returning to your shop over time</span>
+            </div>
+            <img src="images/chart7.png" alt="chart7" class="img-fluid ps-3">
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center px-5 text-secondary" style="height: 66.5px;">
+        <p class="m-0">Thank you for creating with Phoenix | 2023 © <span class="text-info"> VINIT Viradiya</span></p>
+        <span>v1.11.0</span>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <!-- Sidebar -->
+  <script>
+    $(document).ready(function () {
+      $(".collapse-btn").click(function () {
+        $(".sidebar").toggleClass("sw");
+        $(".main-content").toggleClass("sw");
+        $(".m-nav").toggleClass("d-none");
+        $(".icons").toggleClass("d-block");
+        $(".c-text1").toggleClass("d-none");
+        $(".c-text2").toggleClass("d-block");
+      });
+    });
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 40.674, lng: -73.945 },
+        zoom: 12,
+        styles: [
+          { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+          { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+          { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+          {
+            featureType: "administrative.locality",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#85a9ff" }],
+          },
+          {
+            featureType: "poi",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#85a9ff" }],
+          },
+          {
+            featureType: "poi.park",
+            elementType: "geometry",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "poi.park",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "road",
+            elementType: "geometry",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "road",
+            elementType: "geometry.stroke",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "road",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry.stroke",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "road.highway",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "transit",
+            elementType: "geometry",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "transit.station",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "water",
+            elementType: "geometry",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "water",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#000" }],
+          },
+          {
+            featureType: "water",
+            elementType: "labels.text.stroke",
+            stylers: [{ color: "#000" }],
+          },
+        ],
+      });
+    }
+
+    window.initMap = initMap;
+  </script>
+</body>
+
+</html>

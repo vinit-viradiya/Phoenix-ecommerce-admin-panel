@@ -1,0 +1,178 @@
+:root {
+    --vv-sidebar-width: 250px;
+    --vv-main-header-height: 65px;
+    --bs-border-color: #31374a;
+    --bs-dark-rgb: 20, 24, 36;
+    --bs-black-rgb: 15, 17, 26;
+    --bs-white-rgb: 239, 242, 246;
+    --bs-primary-rgb: 34, 40, 52;
+    --bs-secondary-rgb: 159, 166, 188;
+    --bs-warning-rgb: 138, 148, 173;
+    --bs-link-hover-color-rgb: 255, 255, 255;
+    --bs-link-color: #9fa6bc;
+    --bs-link-hover-color: #fff;
+    --bs-dropdown-link-color: #9fa6bc;
+    --bs-tertiary-bg: #222834;
+    --bs-info-rgb: 133, 169, 255;
+    --bs-danger-rgb: 255, 204, 133;
+    --bs-secondary-bg-subtle: #1d2332;
+    --bs-light-rgb: 96, 198, 255;
+}
+
+li {
+    list-style: none;
+}
+
+.sw {
+    --vv-sidebar-width: 65px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--bs-border-color);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar,
+.main-header a,
+.fs-13 {
+    font-size: 13px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    width: 250px;
+}
+
+.collapse-btn {
+    width: var(--vv-sidebar-width);
+    margin-left: -25px;
+}
+
+.arrow {
+    font-size: 9px;
+    vertical-align: middle;
+}
+
+.n-heading {
+    color: #6e7891;
+    font-size: 11px;
+}
+
+.i-bg {
+    background-color: rgba(56, 116, 255, 0.24);
+}
+
+.i-color {
+    color: #85a9ff;
+}
+
+.b-light {
+    border-color: #373e53;
+}
+
+body {
+    font-family: 'Nunito Sans';
+    background-color: rgb(15, 17, 26);
+}
+
+.sidebar {
+    width: var(--vv-sidebar-width);
+    height: calc(100vh - var(--vv-main-header-height));
+}
+
+.main-content {
+    margin-left: var(--vv-sidebar-width);
+    margin-top: var(--vv-main-header-height);
+}
+
+.main-header {
+    height: var(--vv-main-header-height);
+}
+
+input::placeholder {
+    color: rgb(159, 166, 188) !important;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+}
+
+.form-control:focus {
+    border-color: #31374a;
+}
+
+.bullet {
+    width: 18px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.frame {
+    width: var(--vv-frame-size);
+    height: var(--vv-frame-size);
+}
+
+.table span,
+.fs-10 {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.new {
+    border-radius: 3px;
+    padding: 0px 8px;
+}
+
+.icons {
+    display: none;
+}
+
+.c-text2 {
+    display: none;
+}
+
+.dot {
+    right: -12px;
+    width: 6px;
+    height: 6px;
+    top: 0;
+}
+
+.sidebar,
+.main-content,
+.m-nav,
+.icons,
+.collapse-btn {
+    transition: all .2s;
+}
+
+.icon-wrapper:before {
+    position: absolute;
+    content: "";
+    height: 1.299rem;
+    width: 1.299rem;
+    border-radius: 0.243rem;
+    top: 0.5rem;
+    left: 0.2rem;
+    background-color: #85aaff40;
+    z-index: 0;
+}
+
+#map {
+    height: 100%;
+}
